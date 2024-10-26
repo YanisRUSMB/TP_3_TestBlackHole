@@ -10,11 +10,12 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include <BlackHole.h>
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
-// ATP_TrouNoirCharacter
+// ATP_3_TestsCharacter
 
 ATP_TrouNoirCharacter::ATP_TrouNoirCharacter()
 {
@@ -52,6 +53,9 @@ ATP_TrouNoirCharacter::ATP_TrouNoirCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	SpawnLocation = CreateDefaultSubobject<USceneComponent>(TEXT("Bullet Spawn Point"));
+	SpawnLocation->SetupAttachment(GetMesh());
 }
 
 void ATP_TrouNoirCharacter::BeginPlay()
@@ -63,6 +67,27 @@ void ATP_TrouNoirCharacter::BeginPlay()
 //////////////////////////////////////////////////////////////////////////
 // Input
 
+void ATP_TrouNoirCharacter::fireBullet(const FInputActionValue& Value)
+{
+	FRotator CharacterRotation = GetActorRotation();
+	if (canFire) 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Character Rotation: Pitch = %f, Yaw = %f, Roll = %f"),
+			CharacterRotation.Pitch, CharacterRotation.Yaw, CharacterRotation.Roll);
+		ShootBullet();
+		canFire = false;
+
+		FTimerDelegate Delegate = FTimerDelegate::CreateUObject(this, &ATP_TrouNoirCharacter::SetCanFire, true);
+		FTimerHandle TimerHandle;
+		GetWorld()->GetTimerManager().SetTimer(TimerHandle,Delegate,timeBetweenFire,false);
+
+	}
+}
+
+void ATP_TrouNoirCharacter::SetCanFire(bool Value)
+{
+	canFire = true;
+}
 void ATP_TrouNoirCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Add Input Mapping Context
@@ -86,6 +111,9 @@ void ATP_TrouNoirCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ATP_TrouNoirCharacter::Look);
+
+		//Shooting
+		EnhancedInputComponent->BindAction(FireInput, ETriggerEvent::Triggered, this, &ATP_TrouNoirCharacter::fireBullet);
 	}
 	else
 	{
@@ -127,4 +155,16 @@ void ATP_TrouNoirCharacter::Look(const FInputActionValue& Value)
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+AActor* ATP_TrouNoirCharacter::ShootBullet()
+{
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Instigator = this;
+	AActor* SpawnedActor = GetWorld()->SpawnActor<ABlackHole>(
+		BulletToSpawn,
+		SpawnLocation->GetComponentLocation(),
+		GetActorRotation(),
+		SpawnParams);
+	return SpawnedActor;
 }

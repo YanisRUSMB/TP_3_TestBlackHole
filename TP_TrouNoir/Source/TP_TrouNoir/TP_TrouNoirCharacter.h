@@ -44,6 +44,8 @@ class ATP_TrouNoirCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputAction* FireInput;
 public:
 	ATP_TrouNoirCharacter();
 	
@@ -57,6 +59,22 @@ protected:
 	void Look(const FInputActionValue& Value);
 			
 
+
+	UPROPERTY(EditDefaultsOnly)
+	USceneComponent* SpawnLocation;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class ABlackHole> BulletToSpawn;
+
+
+	bool canFire = true;
+
+	UPROPERTY(EditAnywhere)
+	float timeBetweenFire = 5.0f;
+
+	UFUNCTION()
+	void SetCanFire(bool Value);
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -69,5 +87,9 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	AActor* ShootBullet();
+
+	void fireBullet(const FInputActionValue& Value);
 };
 

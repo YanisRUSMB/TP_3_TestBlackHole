@@ -63,7 +63,9 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\playermappablekeyslot.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\playermappablekeyslot.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
-            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h"
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
+            "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\source\\tp_trounoir\\public\\blackhole.h",
+            "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\intermediate\\build\\win64\\unrealeditor\\inc\\tp_trounoir\\uht\\blackhole.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

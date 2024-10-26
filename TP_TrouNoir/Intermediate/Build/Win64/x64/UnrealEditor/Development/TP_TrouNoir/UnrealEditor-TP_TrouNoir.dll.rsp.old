@@ -35,6 +35,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
+/NATVIS:"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\Niagara.natvis"
 "C:\Users\reyna\Documents\Unreal Projects\TP_3_TestBlackHole\TP_TrouNoir\Intermediate\Build\Win64\x64\TP_TrouNoirEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "C:\Users\reyna\Documents\Unreal Projects\TP_3_TestBlackHole\TP_TrouNoir\Intermediate\Build\Win64\x64\UnrealEditor\Development\TP_TrouNoir\BlackHole.gen.cpp.obj"
 "C:\Users\reyna\Documents\Unreal Projects\TP_3_TestBlackHole\TP_TrouNoir\Intermediate\Build\Win64\x64\UnrealEditor\Development\TP_TrouNoir\TP_TrouNoir.init.gen.cpp.obj"
@@ -50,6 +51,7 @@
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"
+"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\UnrealEditor-Niagara.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
