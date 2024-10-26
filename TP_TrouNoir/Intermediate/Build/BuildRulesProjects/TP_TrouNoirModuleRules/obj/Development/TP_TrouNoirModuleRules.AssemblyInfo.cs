@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP_TrouNoirModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ec44abcd7e49d447c91e406bb5e0d3f5b8ebea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5b3ccb75bafb77e8ae5f218b53590470d63e3e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP_TrouNoirModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP_TrouNoirModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

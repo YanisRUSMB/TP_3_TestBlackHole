@@ -11,6 +11,7 @@
     <None Include="..\..\Source\TP_TrouNoirEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -52,6 +53,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\TP_TrouNoir\TP_TrouNoirGameMode.h">
       <Filter>Source\TP_TrouNoir</Filter>
+    </ClInclude>
+    <Filter Include="Source\TP_TrouNoir\Private">
+      <UniqueIdentifier>{5CBFC82E-9FCD-34CF-B262-7E4E70AE10FD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TP_TrouNoir\Private\BlackHole.cpp">
+      <Filter>Source\TP_TrouNoir\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TP_TrouNoir\Public">
+      <UniqueIdentifier>{D597F0D7-ABF9-3468-BA93-4A57AB9FBEEF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TP_TrouNoir\Public\BlackHole.h">
+      <Filter>Source\TP_TrouNoir\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

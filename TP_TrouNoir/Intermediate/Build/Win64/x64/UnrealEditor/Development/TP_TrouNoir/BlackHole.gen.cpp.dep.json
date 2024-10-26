@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\intermediate\\build\\win64\\unrealeditor\\inc\\tp_trounoir\\uht\\blackhole.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\intermediate\\build\\win64\\x64\\tp_trounoireditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tp_trounoir\\definitions.tp_trounoir.h",
+            "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\source\\tp_trounoir\\public\\blackhole.h",
+            "c:\\users\\reyna\\documents\\unreal projects\\tp_3_testblackhole\\tp_trounoir\\intermediate\\build\\win64\\unrealeditor\\inc\\tp_trounoir\\uht\\blackhole.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
