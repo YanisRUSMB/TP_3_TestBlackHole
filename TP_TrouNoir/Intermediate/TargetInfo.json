@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TP_TrouNoir",
+			"Path": "..\\Source\\TP_TrouNoir.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TP_TrouNoirEditor",
+			"Path": "..\\Source\\TP_TrouNoirEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

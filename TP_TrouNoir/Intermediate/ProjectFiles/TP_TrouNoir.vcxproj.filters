@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TP_TrouNoir.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TP_TrouNoir.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TP_TrouNoirEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TP_TrouNoir">
+      <UniqueIdentifier>{37F54ADC-311B-349E-A55F-B01F6BF9FCA2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TP_TrouNoir\TP_TrouNoir.Build.cs">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TP_TrouNoir\TP_TrouNoir.cpp">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TP_TrouNoir\TP_TrouNoir.h">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TP_TrouNoir\TP_TrouNoirCharacter.cpp">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TP_TrouNoir\TP_TrouNoirCharacter.h">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TP_TrouNoir\TP_TrouNoirGameMode.cpp">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TP_TrouNoir\TP_TrouNoirGameMode.h">
+      <Filter>Source\TP_TrouNoir</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

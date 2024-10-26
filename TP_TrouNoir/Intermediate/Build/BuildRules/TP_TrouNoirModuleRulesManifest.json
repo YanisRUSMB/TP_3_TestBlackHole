@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\reyna\\Documents\\Unreal Projects\\TP_3_TestBlackHole\\TP_TrouNoir\\Source\\TP_TrouNoir\\TP_TrouNoir.Build.cs",
+		"C:\\Users\\reyna\\Documents\\Unreal Projects\\TP_3_TestBlackHole\\TP_TrouNoir\\Source\\TP_TrouNoir.Target.cs",
+		"C:\\Users\\reyna\\Documents\\Unreal Projects\\TP_3_TestBlackHole\\TP_TrouNoir\\Source\\TP_TrouNoirEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
